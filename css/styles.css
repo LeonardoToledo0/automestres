@@ -1,0 +1,804 @@
+@import url("https://fonts.googleapis.com/css2? family= Ubuntu+Mono:ital,wght@0,400;0,700;1,400 & display=swap");
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+body {
+  font-size: 11px;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+a {
+  color: floralwhite;
+  text-decoration: none;
+}
+
+.site {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.faixa {
+  background: #000;
+}
+
+.faixa div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.faixa div div a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.faixa div div .tel {
+  margin-right: 50px;
+}
+
+.faixa div div a span {
+  color: #e79924;
+  margin-right: 3px;
+}
+
+.faixa div ul {
+  display: flex;
+}
+
+.faixa div ul li {
+  margin-left: 30px;
+}
+
+/*FAIXA MENU */
+.faixaMenu div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.faixaMenu h1 {
+  width: 255px;
+  height: 126px;
+  background: url(../img/logo-auto-mestre.svg) no-repeat;
+  text-indent: -9999px;
+}
+
+.faixaMenu div div a {
+  background-color: #e79924;
+  padding: 15px;
+  margin-left: 40px;
+  border: #a3a2ad solid 1px;
+  border-radius: 10px 5px;
+}
+
+.faixaMenu div div a:hover {
+  background-color: #a3a2ad;
+
+  border: #e79924 solid 1px;
+}
+
+/*--------menu-----*/
+
+.menu {
+  align-items: center;
+  display: flex;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.submenu {
+  display: none !important;
+  position: absolute;
+  padding-top: 15px;
+}
+
+.menu ul li:hover > .submenu {
+  display: block !important;
+}
+
+.submenu li {
+  margin-bottom: 20px !important;
+}
+
+.menu ul li a {
+  margin: 0 5px;
+  background: #e79924;
+  padding: 5px 15px;
+  border: #a3a2ad solid 1px;
+  border-radius: 10px 5px;
+}
+
+.menu ul li a:hover {
+  background: #a3a2ad;
+
+  border: #e79924 solid 1px;
+}
+
+.menu a {
+  background-color: #e79924;
+  padding: 25px 15px;
+  margin: 15px;
+  border: #a3a2ad solid 1px;
+  border-radius: 10px 5px;
+}
+
+.menu a:hover {
+  background-color: #a3a2ad;
+
+  border: #e79924 solid 1px;
+}
+
+.abrir-menu {
+  background: url(../img/menu.png);
+  background-size: cover;
+  padding: 20px;
+  border: 0;
+  display: block;
+  align-self: flex-end;
+  margin: 10px;
+}
+.fechar-menu {
+  background: url(../img/fechar.png);
+  background-size: cover;
+  padding: 20px;
+  border: 0;
+  display: block;
+  margin: 10px;
+}
+.menuFixo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 6;
+  background: rgba(255, 255, 255, 0.9);
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* ###### Banner ####### */
+.banner .slick-prev:before,
+.banner .slick-next:before {
+  font-size: 60px;
+  color: #e79924;
+}
+
+.banner .slick-prev {
+  left: 25px;
+  z-index: 2;
+}
+[dir="rtl"] .banner .slick-prev {
+  right: -25px;
+  left: auto;
+}
+.banner .slick-prev:before {
+  content: "←";
+}
+[dir="rtl"].banner .slick-prev:before {
+  content: "→";
+}
+
+.banner .slick-next {
+  right: 65px;
+}
+[dir="rtl"] .banner .slick-next {
+  right: auto;
+  left: -25px;
+}
+.banner .slick-next:before {
+  content: "→";
+}
+[dir="rtl"] .banner .slick-next:before {
+  content: "←";
+}
+
+/*######Sessão Sobre#####*/
+
+.sobre {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+.sobre div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sobre h2 {
+  font-size: 2em;
+  color: #e79924;
+  font-weight: 700;
+}
+
+.sobre p {
+  font-size: 1.5em;
+  text-align: justify;
+  line-height: 2em;
+}
+
+.sobre a {
+  background: #e79924;
+  padding: 5px 15px;
+  border: #a3a2ad solid 1px;
+  border-radius: 10px 5px;
+  width: 30%;
+  text-align: center;
+  align-self: flex-end;
+  color: #fff;
+}
+
+.sobre a:hover {
+  background-color: #a3a2ad;
+
+  border: #e79924 solid 1px;
+}
+
+.sobre div:nth-child(2) img {
+  width: 63%;
+}
+
+.sobre div:nth-child(2) img:nth-child(2) {
+  align-self: flex-end;
+  margin-top: -100px;
+}
+
+/*####### SERVICO#########*/
+
+.servico {
+  background: #333;
+  padding-top: 40px;
+}
+
+.servico h2 {
+  text-align: center;
+  color: #e79924;
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.servico div div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.servico div div div {
+  margin: 0 5px;
+}
+
+.servico a:hover {
+  background-color: #b2360f;
+}
+
+.servico p {
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.5em;
+  background-color: #000;
+  padding: 20px;
+}
+
+.faixaservico {
+  background: #ccc;
+  margin-top: -9.3%;
+  height: 200px;
+  border-top: solid thin #e79924;
+}
+.servico .slick-prev:before,
+.servico .slick-next:before {
+  font-size: 40px;
+  color: #e79924;
+}
+
+.servico .slick-prev {
+  left: -45px;
+  z-index: 2;
+}
+[dir="rtl"] .servico .slick-prev {
+  right: -25px;
+  left: auto;
+}
+.servico .slick-prev:before {
+  content: "←";
+}
+[dir="rtl"].servico .slick-prev:before {
+  content: "→";
+}
+
+.servico .slick-next {
+  right: -30px;
+}
+[dir="rtl"] .servico .slick-next {
+  right: auto;
+  left: -25px;
+}
+.servico .slick-next:before {
+  content: "→";
+}
+[dir="rtl"] .servico .slick-next:before {
+  content: "←";
+}
+
+/*-------inicio do cabeçalho tec-----*/
+
+.bloco {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+/* centralizar os componentes  */
+.tecCorpo,
+.tecCorpo2,
+.tecImg {
+  width: 32%;
+}
+
+/* centraliza o topo da secao  */
+.tecTopo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.tecTopo p {
+  font-size: 1.5em;
+  text-align: justify;
+  line-height: 2em;
+  padding: 20px;
+  width: 40%;
+  font-weight: 700;
+}
+
+.tecTopo h2 {
+  text-align: center;
+  color: #e79924;
+  font-size: 3em;
+  font-weight: 700;
+  padding: 20px;
+  width: 40%;
+  align-self: baseline;
+}
+
+/* alinha a imagem do carro no centro e substitui por uma sem fundo  */
+.tecImg {
+  align-self: center;
+}
+
+/* adicionei uma nova div para cada item para centrlizar na tela  */
+
+.tecCorpo div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.tecCorpo2 div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+/* ajustei o tamanho da imagem para ficar todas iguais e em cima do texto conforme o wireframe  */
+.tecCorpo div img {
+  width: 100px;
+  height: 100px;
+  margin-left: -20px;
+  z-index: 1;
+  border-radius: 15px 25px;
+}
+
+.tecCorpo2 div img {
+  width: 100px;
+  height: 100px;
+  margin-right: -20px;
+  z-index: 1;
+  border-radius: 25px 15px;
+}
+
+/* ajuste dos textos e o background   */
+
+.tecCorpo div p {
+  color: white;
+  background-color: #888;
+  font-size: 1.5em;
+  text-align: justify;
+  line-height: 2em;
+  padding: 15px;
+  position: relative;
+  right: 10px;
+  border-radius: 15px 25px;
+}
+
+.tecCorpo2 div p {
+  color: white;
+  background-color: #888;
+  font-size: 1.5em;
+  text-align: justify;
+  line-height: 2em;
+  padding: 15px;
+  position: relative;
+  left: 10px;
+  border-radius: 25px 15px;
+}
+
+/* Inicio Galeria  */
+.galeria {
+  background: #333;
+  padding: 40px 0;
+}
+
+.galeria h2 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.galeria img {
+  margin: 0 5px;
+}
+
+.galeria .slick-dots li button:hover,
+.galeria .slick-dots li button:focus {
+  outline: none;
+}
+.galeria .slick-dots li button:hover:before,
+.galeria .slick-dots li button:focus:before {
+  opacity: 1;
+}
+.galeria .slick-dots li button:before {
+  font-size: 10px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 20px;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: "•";
+  text-align: center;
+
+  opacity: 0.25;
+  color: #e79924;
+}
+.galeria.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #b2360f;
+}
+
+/* Inicio depoimentos */
+.depoimentos {
+  max-width: 1300px;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.depoimentos h2 {
+  margin: 40px auto;
+  text-align: center;
+  color: #e79924;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.depoimentos-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.depoimentos-img img {
+  width: 30%;
+  border-radius: 50%;
+  height: 10%;
+}
+
+.depoimentos-paragrafo {
+  color: black;
+  margin: 40px auto;
+  font-weight: 500;
+  font-size: 1.8em;
+  text-align: center;
+  line-height: 2em;
+  padding: 15px;
+  position: relative;
+}
+
+/* Inicio projeto oficina  */
+.projeto-oficina {
+  background: #b2360f;
+}
+
+.projeto-texto {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projeto-texto h2 {
+  font-size: 3rem;
+  padding: 20px;
+  color: #fff;
+}
+
+.projeto-texto h4 {
+  font-size: 1.5rem;
+  padding: 20px;
+  color: #fff;
+}
+
+.container-projeto {
+  max-width: 1300px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.projeto-image {
+  max-width: 1300px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.box-image {
+  margin: 3px;
+  border-bottom: 3px solid #b2360f;
+  overflow: hidden;
+}
+
+.projeto-image img {
+  width: 100%;
+  opacity: 0.4;
+}
+
+.projeto-image img:hover {
+  transform: scale(1.4) rotate(4deg);
+  opacity: 1;
+  transition: 0.7s ease-in;
+}
+
+.projeto-image p {
+  background: #ccc;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #000;
+  font-size: 1.3em;
+  text-align: justify;
+  line-height: 1.8em;
+  width: 99%;
+}
+
+.projeto-image p:hover {
+  background: #fff;
+  transition: 0.6s ease-in;
+}
+
+.projeto-faixa {
+  height: 300px;
+  background: #333;
+  margin-top: -250px;
+}
+
+/* Inicio carrosel montadora  */
+.carrosel-montadora {
+  background: #fff;
+  justify-content: space-between;
+}
+
+.montadora {
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px auto;
+  gap: 1%;
+}
+
+.montadora img {
+  width: 20%;
+}
+.montadora .slick-dots li button:hover,
+.montadora .slick-dots li button:focus {
+  outline: none;
+}
+.montadora .slick-dots li button:hover:before,
+.montadora .slick-dots li button:focus:before {
+  opacity: 1;
+}
+.montadora .slick-dots li button:before {
+  font-size: 10px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: "•";
+  text-align: center;
+
+  opacity: 0.25;
+  color: #e79924;
+}
+.montadora.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #b2360f;
+}
+
+/* Inicio Footer */
+.rodape {
+  background: #333;
+  text-align: center;
+}
+
+.rodape-menu {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primeiro-menu {
+  margin: 60px;
+  width: 30%;
+}
+
+.primeiro-menu img {
+  margin: 20px;
+  width: 100%;
+}
+
+.primeiro-menu p {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.segundo-menu {
+  width: 30%;
+}
+
+.segundo-menu h2 {
+  align-items: baseline;
+  font-size: 1.5rem;
+  padding: 20px;
+  color: #fff;
+}
+
+.segundo-menu ul {
+  display: block;
+}
+
+.segundo-menu li > a {
+  display: block;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.terceiro-menu {
+  width: 30%;
+}
+
+.terceiro-text h2 {
+  font-size: 1.5rem;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.terceiro-text-p {
+  width: 80%;
+  margin: 40px auto;
+  border-bottom: solid 3px #ccc;
+}
+
+.terceiro-menu div h3 {
+  margin-top: 10px;
+  text-align: start;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.terceiro-menu div h5 {
+  text-align: start;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* -----PG Contato-------- */
+.form {
+  padding: 40px 0;
+}
+.form h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #e79924;
+  font-weight: 700;
+}
+.form form {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.form form > div {
+  width: 48%;
+}
+.form form > div div {
+  margin-bottom: 3%;
+}
+.form input,
+.form textarea,
+.form button {
+  width: 98%;
+  padding: 2%;
+  background: #e79924;
+  color: #fff;
+  font-size: 1.8em;
+  border: solid thin;
+}
+.form textarea {
+  height: 154px;
+  resize: none;
+}
+.form form div:nth-child(2) div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+}
+.form input[type="submit"],
+.form button {
+  border-radius: 10px 5px;
+  width: 40%;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.form input[type="submit"]:hover,
+.form button:hover {
+  border: #e79924 solid 1px;
+  background: #a3a2ad;
+}

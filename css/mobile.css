@@ -1,0 +1,210 @@
+/* ###################### */
+/* ##### 601 ate 900 ####*/
+/* ###################### */
+
+@media (max-width: 900px) {
+  main {
+    overflow: hidden;
+  }
+
+  .menu {
+    flex-direction: row;
+  }
+  .servico {
+    height: 540px;
+  }
+  .faixaservico {
+    display: none;
+  }
+  .faixaMenu div {
+    flex-direction: column-reverse;
+  }
+  .faixaMenu div div {
+    flex-direction: row;
+  }
+  .banner .slick-prev:before,
+  .banner .slick-next:before {
+    display: none;
+  }
+  .tecImg {
+    display: none;
+  }
+  .bloco {
+    margin-top: -80px;
+  }
+  .tecTopo h2 {
+    font-size: 40px;
+    line-height: 1em;
+  }
+  .tecCorpo,
+  .tecCorpo2 {
+    width: 50%;
+  }
+  .rodape-menu {
+    flex-direction: column;
+  }
+  .primeiro-menu {
+    width: 60%;
+  }
+  .primeiro-menu img {
+    width: 50%;
+  }
+  .primeiro-menu p {
+    text-align: justify;
+  }
+  .segundo-menu {
+    width: 80%;
+  }
+  .segundo-menu h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .terceiro-menu {
+    width: 90%;
+  }
+  .terceiro-menu h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+@media not all and (max-width: 600px) {
+  .abrir-menu,
+  .fechar-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .faixa div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .faixaMenu div div {
+    flex-direction: column;
+  }
+  .faixaMenu h1 {
+    margin: 5%;
+  }
+  .faixa div div :nth-child(1) {
+    margin-right: 0;
+  }
+  .faixa div ul li :nth-child(1) {
+    margin-left: 0;
+  }
+
+  .menu {
+    position: fixed;
+    background: rgba(100, 70, 5, 0.5);
+    height: 100%;
+    z-index: 5;
+    margin: 0;
+    top: 0;
+    max-width: 400px;
+    width: 50%;
+    right: -300px;
+    transition: right 0.7s ease-out;
+    flex-direction: column;
+  }
+  .fechar-menu {
+    align-self: flex-start;
+  }
+  .menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu ul li {
+    margin: 10px 5px;
+  }
+  .menu ul li a {
+    display: block;
+    padding: 15px 15px;
+  }
+  .menu > a {
+    margin: 0;
+    width: 73%;
+    margin-top: 20%;
+  }
+
+  .menu-ativo .menu {
+    right: 0;
+  }
+
+  .menu .faixaMenu div div a {
+    display: none;
+  }
+  .submenu {
+    position: relative;
+  }
+  .banner {
+    display: none;
+  }
+  .sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobre div {
+    margin: 10px auto;
+    width: 95%;
+  }
+  .sobre:nth-child(1) {
+    padding: 10px;
+  }
+  .sobre:nth-child(2) {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  .servico {
+    padding: 10px;
+    height: auto;
+  }
+  .servico div div {
+    margin-right: 10px;
+  }
+  .servico .slick-prev:before,
+  .servico .slick-next:before {
+    display: none;
+  }
+  .tecTopo {
+    flex-direction: column-reverse;
+  }
+
+  .tecTopo h2,
+  .tecTopo p {
+    width: 100%;
+  }
+  .bloco {
+    flex-direction: column;
+    width: 95%;
+  }
+  .tecCorpo div {
+    width: 100%;
+  }
+
+  .depoimentos {
+    width: 90%;
+  }
+  .depoimentos p {
+    text-align: justify;
+  }
+  .form form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+  }
+  .form form {
+    flex-direction: column;
+    width: 98%;
+  }
+  .form form > div {
+    width: 98%;
+    justify-content: center;
+  }
+  .form form div:nth-child(2) div:nth-child(2) {
+    flex-direction: column;
+  }
+  .form input[type="submit"],
+  .form button {
+    width: 80%;
+    margin: 2% auto;
+  }
+}

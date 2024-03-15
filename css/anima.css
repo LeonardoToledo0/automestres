@@ -1,0 +1,27 @@
+/* Animacao Sobre */
+.animate__backInUp {
+  display: block;
+  margin: 0 0.5rem;
+
+  animation: bounce;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+/* Animacao Servico */
+.animate__slideOutUp {
+  display: block;
+  margin: 0 0.5rem;
+
+  animation: bounce;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+/* Animacao Tecnologia */
+.animate__zoomInUp {
+  display: block;
+  margin: 0 0.5rem;
+
+  animation: bounce;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
