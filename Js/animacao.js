@@ -132,6 +132,28 @@ EnviaWhats = () => {
   let email = "Email:" + document.getElementById("email").value;
   let fone = "Fone:" + document.getElementById("fone").value;
   let mens = "Mens:" + document.getElementById("mens").value;
-  let numeroWhat = "5511963535038";
+
+  let numeroWhats = "5511963535038";
+
   let quebreDeLinha = "%0A";
+
+  var mensagem = encodeURIComponent(
+    assunto +
+      quebreDeLinha +
+      nome +
+      quebreDeLinha +
+      email +
+      quebreDeLinha +
+      fone +
+      quebreDeLinha +
+      mens
+  );
+  window.open(
+    "https://api.whatsapp.com/send?phone=" + numeroWhats + "&text=" + mensagem,
+    "_blank"
+  );
+  document.getElementById("nome").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("fone").value = "";
+  document.getElementById("mens").value = "";
 };
