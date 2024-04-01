@@ -15,6 +15,8 @@ if (isset($_POST['email'])) {
   $fone   = $_POST['fone'];
   $mens   = $_POST['mens'];
 
+  $contato = new ClassContato();
+
   // Carregar o autoloader do Composer
   require 'mailer/Exception.php';
   require 'mailer/PHPMailer.php';
